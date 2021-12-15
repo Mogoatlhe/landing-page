@@ -3,7 +3,7 @@ html {
 }
 *, *::before, *::after {
     box-sizing: inherit;
-    border: red 1px solid;
+    /* border: red 1px solid; */
 }
 
 body{
@@ -17,6 +17,11 @@ body{
     justify-content: space-around;
     align-items: center;
     color: white;
+}
+
+#logo{
+    font-size: 24px;
+    color: #f9faf8;
 }
 
 ul{
@@ -33,13 +38,15 @@ a{
 #hero{
     display: flex;
     justify-content: center;
-    display: flex;
-    gap: 100px;
+    gap: 140px;
     padding: 120px 0;
 }
 
 #hero-text{
-    width: 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 358px;
 }
 
 #hero-main-text{
@@ -53,16 +60,121 @@ a{
     color: #E5E7EB;
 }
 
-#hero-call-to-action{
+button{
     background-color: #3882f6; 
     color: #E5E7EB;
-    padding: 5px 13px;
+    padding: 8px 13px;
     border-radius: 5px;
     font-weight: bold;
+    border: none;
+    width: 100px;
 }
 
 #hero-image{
     height: auto;
     width: 450px;
-    background-color: grey;
+}
+
+#random{
+    background-color: #f9faf8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+    gap: 30px;
+}
+
+#random-text{
+    margin-top: 10px;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
+#cards-container{
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card{
+    border: 3px #3882f6 solid;
+    width: 140px;
+    height: 140px;
+    border-radius: 10px;
+}
+
+.card{
+    background-image: url("./images/arsene.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+.subtext{
+    width: 140px;
+}
+
+#quote-section{
+    background-color: #E5E7EB;
+    display: flex;
+    padding: 60px 0px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#quote{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#quote-text{
+    font-size: 36px;
+    font-weight: lighter;
+    color: #1F2937;
+    width: 750px;
+}
+
+#author{
+    text-align: left;
+}
+
+#call-to-action-container{
+    padding: 60px 200px;
+    background-color: #f9faf8;
+}
+
+#call-to-action{
+    background-color: #3882f6;
+    border-radius: 10px;
+    padding: 40px 60px;
+    color: #f9faf8;
+    display: flex;
+    justify-content: space-between;
+}
+
+#call-to-action-header{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#call-to-action-button{
+    border: #f9faf8 solid 2px;
+    padding: 5px 20px;
+}
+
+#copyright{
+    color: #f9faf8;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
